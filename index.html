@@ -92,6 +92,13 @@
 </head>
 <body class="с-липкой-кнопкой">
 <section class="блок блок--первый-экран первый-экран--сцена светлый фон--пятна" id="экран-1" data-тип="первый-экран" data-схема="сцена" data-ключ-макета="светлая" data-картинка="фото" style="--добор-затемнения: 0; --добор-высветления: 0; --фон-ключа: #D1B37F">
+  <style>
+    @media (max-width: 899px) {
+      #экран-1.первый-экран--сцена { padding-top: calc(var(--отступ-секции) * .8); }
+      #экран-1 .лид { margin-bottom: .5em; }
+      #экран-1 .цифры { margin-top: .2em; }
+    }
+  </style>
   <header class="шапка">
     <a class="шапка__лого" href="#">логотип «Айдасад»</a>
     <span class="шапка__лиц"><svg class="иконка" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
