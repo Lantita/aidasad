@@ -1732,6 +1732,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04.светлый .факт__пояснение { color: var(--цвет-текст-мягкий); }
   #экран-04.тёмный .факт__пояснение { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 78%, transparent); }
   #экран-04 .пятно { width: 26rem; height: 26rem; top: -6rem; right: -4rem; }
+  #экран-04.тёмный .кикер { color: var(--цвет-тёплый-мягкий); }
   @media (max-width: 899px) {
     #экран-04 .кто-мы { grid-template-columns: 1fr; }
   }
