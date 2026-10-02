@@ -1733,8 +1733,13 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04.тёмный .факт__пояснение { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 78%, transparent); }
   #экран-04 .пятно { width: 26rem; height: 26rem; top: -6rem; right: -4rem; }
   #экран-04.тёмный .кикер { color: var(--цвет-тёплый-мягкий); }
+  #экран-04 .фото { align-self: center; }
   @media (max-width: 899px) {
-    #экран-04 .кто-мы { grid-template-columns: 1fr; }
+
+    #экран-04 .кто-мы { grid-template-columns: 1fr; gap: 0; }
+    #экран-04 .кто-мы__текст { display: contents; }
+    #экран-04 .секция__шапка { order: -1; }
+    #экран-04 .фото { order: -1; align-self: auto; margin: 1.5rem 0 0; }
   }
   @media (max-width: 559px) {
     #экран-04 .команда { grid-template-columns: 1fr; }
