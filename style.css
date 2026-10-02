@@ -1748,6 +1748,19 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05.светлый .стих__интро { color: var(--цвет-текст-мягкий); }
   #экран-05.тёмный .стих__интро { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 82%, transparent); }
 
+  #экран-05 .штрих { position: absolute; bottom: 0; z-index: 0; pointer-events: none; opacity: .75;
+    width: min(400px, calc((100vw - 30rem) / 2 - 1rem)); aspect-ratio: 900 / 1096;
+    background: url(img/shtrih-left.webp) left bottom / contain no-repeat; }
+  #экран-05 .штрих--лево { left: 0; }
+  #экран-05 .штрих--право { right: 0; transform: scaleX(-1); }
+  #экран-05 .штрих-центр { display: none; }
+  @media (max-width: 1023px) {
+    #экран-05 .штрих { display: none; }
+    #экран-05 .штрих-центр { display: block; width: min(21rem, 100%); margin: 2rem auto 0; aspect-ratio: 1100 / 234; opacity: .75;
+      pointer-events: none; background: url(img/shtrih-center.webp) center / contain no-repeat; }
+    #экран-05 .штрих-центр + .стих { margin-top: 1.5rem; }
+  }
+
 /* экран 06 */
 #экран-06 .способы { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1.25rem; margin: 0 0 2rem; padding: 0; list-style: none; }
   #экран-06 .способ b { display: block; font-weight: 700; font-size: var(--кегль-текст); margin: 0 0 .375rem; }
