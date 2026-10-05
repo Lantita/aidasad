@@ -135,6 +135,17 @@
       #экран-1 .кикер { margin-top: 43px; margin-bottom: 14px; align-self: flex-start; }
       #экран-1 h1 { margin-top: 0; }
     }
+    /* компьютер в низком окне (ноутбук 1366×768 — окно ≈ 1366×650, масштаб страницы в браузере 150% — ≈ 1270×600): обложка выше окна,
+       и подписи под цифрами уходят за нижний край. Чуть меньше воздуха между строками и заголовок не выше 8,2% высоты окна —
+       всё помещается; тексты не менялись, заголовок остаётся в пять строк. В окнах выше 700 px и на телефоне правило не действует (05.10.2026) */
+    @media (min-width: 900px) and (max-height: 700px) {
+      #экран-1.первый-экран--сцена { padding-top: min(calc(var(--отступ-секции) * 1.35), calc(4.25rem + 10px)); }
+      #экран-1 .кикер { margin-bottom: 10px; }
+      #экран-1 h1 { margin-bottom: 10px; font-size: clamp(2.75rem, min(4vw, 8.2vh), 3.625rem); }
+      #экран-1 .лид { margin-bottom: 8px; }
+      #экран-1 .первый-экран__действие { margin-top: 12px; margin-bottom: 8px; }
+      #экран-1 .цифры { margin-top: 10px; }
+    }
   </style>
   <header class="шапка">
     <a class="шапка__лого" href="#"><img src="img/logo-aidasad.webp" alt="Логотип «Ай да сад!»: овальная деревянная вывеска" width="400" height="239"><svg class="шапка__слово" viewBox="0 0 97 34" width="97" height="34" role="img" aria-label="АЙДАСАД, Калининград" focusable="false"><text x="0" y="15.5" font-size="17" font-weight="700" textLength="97" lengthAdjust="spacing" fill="currentColor">АЙДАСАД</text><text x="-1.1" y="30.6" font-size="13" font-weight="600" textLength="98.1" lengthAdjust="spacing" fill="currentColor">Калининград</text></svg></a>
