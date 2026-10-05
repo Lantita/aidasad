@@ -1685,8 +1685,7 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 02 */
 #экран-02 .блок__внутри { position: relative; z-index: 2; }
   #экран-02 .категории { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 2rem; padding: 0; list-style: none; }
-  #экран-02 h2 { text-wrap: balance; }
-  #экран-02 .категории .карточка { display: grid; gap: .5rem; align-content: start; }
+  #экран-02 .категории .карточка { display: grid; gap: .5rem; }
   #экран-02 .категории .карточка b { display: block; font-weight: 700; font-size: var(--кегль-текст); }
   #экран-02 .категории .карточка p { margin: 0; font-size: var(--кегль-текст); line-height: 1.55; }
   #экран-02.светлый .категории .карточка p { color: var(--цвет-текст-мягкий); }
@@ -1704,15 +1703,14 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
 /* экран 03 */
 #экран-03.светлый { background: var(--цвет-фон-2); }
   #экран-03.тёмный { background: var(--цвет-тёмный-фон-2, var(--цвет-тёмный-фон)); }
-  #экран-03 .секция__лид { text-wrap: balance; }
   #экран-03 .шаги-плиты { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; margin-bottom: 1.5rem; }
-  #экран-03 .шаг-плита { display: grid; gap: .375rem; align-content: start; }
+  #экран-03 .шаг-плита { display: grid; gap: .375rem; }
   #экран-03 .шаг-плита__номер { display: block; font-weight: 700; font-size: var(--кегль-цифра); line-height: 1;
-      letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-bottom: .75rem;
+      letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin-bottom: .125rem;
       color: var(--цвет-акцент-глубже, var(--цвет-акцент)); }
   #экран-03 .шаг-плита b { display: block; font-weight: 700;
       font-size: var(--кегль-текст); line-height: 1.3; }
-  #экран-03 .шаг-плита p { font-size: var(--кегль-текст); line-height: 1.55; margin: 0; text-wrap: pretty; }
+  #экран-03 .шаг-плита p { font-size: var(--кегль-текст); line-height: 1.55; margin: 0; }
   #экран-03 .доказательство-цифра { display: inline-block; font-weight: 700; font-size: var(--кегль-цифра); line-height: 1;
       letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin: 0 .3rem; }
   #экран-03.светлый .доказательство-цифра { color: var(--цвет-акцент); }
@@ -1730,6 +1728,9 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-04.тёмный .рассказ { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 82%, transparent); }
   #экран-04 .факт { display: grid; gap: .625rem; max-width: 20rem; }
   #экран-04 .факт .плитка-цифры { width: fit-content; min-width: 11rem; }
+  #экран-04 .факт__пояснение { margin: 0; font-size: var(--кегль-текст); }
+  #экран-04.светлый .факт__пояснение { color: var(--цвет-текст-мягкий); }
+  #экран-04.тёмный .факт__пояснение { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 78%, transparent); }
   #экран-04 .пятно { width: 26rem; height: 26rem; top: -6rem; right: -4rem; }
   #экран-04.тёмный .кикер { color: var(--цвет-тёплый-мягкий); }
   #экран-04 .фото { align-self: center; }
