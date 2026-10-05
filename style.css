@@ -1749,6 +1749,8 @@ h2 .хвост-акцент { display: block; font-weight: 600; font-size: .6em;
   #экран-05 .цитата-карточка { box-shadow: var(--тень); }
   #экран-05 .стих { position: relative; z-index: 2; max-width: 30rem; margin: clamp(2.75rem, 5.5vw, 3.75rem) auto 0; }
   #экран-05 .стих__интро { margin: 0 0 1rem; font-size: var(--кегль-текст); line-height: 1.6; }
+
+  #экран-05 .стих blockquote p { text-wrap: pretty; }
   #экран-05.светлый .стих__интро { color: var(--цвет-текст-мягкий); }
   #экран-05.тёмный .стих__интро { color: color-mix(in srgb, var(--текст-ключа, var(--цвет-тёмный-текст)) 82%, transparent); }
 
